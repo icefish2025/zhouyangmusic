@@ -1,5 +1,3 @@
-apply plugin: 'com.android.application'
-
 android {
     compileSdkVersion 33
     defaultConfig {
@@ -10,14 +8,12 @@ android {
         versionName "1.0"
     }
     buildTypes {
+        debug {
+            // debug 配置
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-}
-
-dependencies {
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 }
