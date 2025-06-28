@@ -1,21 +1,17 @@
-apply plugin: 'com.android.application'
-android {
-    compileSdk 34
-    defaultConfig {
-        applicationId "com.zhouyangmusic"
-        minSdk 21
-        targetSdk 34
-        versionCode 1
-        versionName "1.0"
+// Top-level build file
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
     }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.2'
     }
 }
-dependencies {
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'android.webkit:webkit:1.6.0'
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
 }

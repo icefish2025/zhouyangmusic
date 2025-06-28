@@ -1,10 +1,11 @@
 apply plugin: 'com.android.application'
+
 android {
-    compileSdk 34
+    compileSdkVersion 33
     defaultConfig {
-        applicationId "com.zhouyangmusic"
-        minSdk 21
-        targetSdk 34
+        applicationId "com.example.zhouyangmusic"
+        minSdkVersion 21
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
     }
@@ -15,7 +16,8 @@ android {
         }
     }
 }
+
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'android.webkit:webkit:1.6.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 }
